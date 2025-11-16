@@ -1,0 +1,92 @@
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    background-color: #fdf6f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ff6f91;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+/* Side by side textareas with flex */
+textarea {
+    flex: 1;
+    /* take equal space */
+    height: 200px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    resize: vertical;
+}
+
+/* Make them stack on small screens */
+@media (max-width: 700px) {
+    .input-container {
+        flex-direction: column;
+    }
+}
+
+input[type="file"] {
+    margin-bottom: 15px;
+}
+
+button {
+    display: block;
+    background-color: #ff6f91;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ff4f70;
+}
+
+#results {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #fff0f5;
+    border-radius: 12px;
+    border: 1px solid #ffe6f0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#highlightedResume {
+    white-space: pre-wrap;
+    overflow-y: auto;
+    background-color: #fff0f5;
+    padding: 20px;
+    border-radius: 15px;
+    max-height: 400px;
+}
+
+.highlight {
+    background-color: #fff176;
+    font-weight: bold;
+}

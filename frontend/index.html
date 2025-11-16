@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Keyword Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Resume Keyword Analyzer</h1>
+
+        <form id="analyzeForm">
+            <div class="input-container">
+                <textarea id="resumeText" placeholder="Paste your resume here"></textarea>
+                <textarea id="jobText" placeholder="Paste the job description here"></textarea>
+            </div>
+
+            <input type="file" id="resumeFile" accept=".pdf">
+            <button type="submit">Analyze</button>
+        </form>
+
+        <h2>Results:</h2>
+        <div id="results"></div>
+
+        <h2>Resume Content (with highlights):</h2>
+        <div id="highlightedResume"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
