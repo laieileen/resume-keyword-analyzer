@@ -29,21 +29,23 @@
 ```bash
 git clone <your-repo-url>
 cd resume-keyword-analyzer
-Install dependencies:
-
-bash
-Copy code
+```
+2. Install dependencies:
+```bash
 npm install
-Start the backend server:
+```
+3. Start the backend server:
 
-bash
-Copy code
+```bash
 node backend/server.js
 The server runs on http://localhost:3000.
+```
 
-Open index.html in your browser.
+4. Open index.html in your browser.
 
-Usage
+--- 
+
+## Usage
 Paste your resume in the left textarea or upload a PDF resume.
 
 Paste the job description in the right textarea.
@@ -52,20 +54,22 @@ Click Analyze.
 
 View your match score, matched keywords, and highlighted resume.
 
-Project Structure
-powershell
-Copy code
+## Project Structure
+```powershell
 resume-keyword-analyzer/
 ├─ backend/
 │  └─ server.js       # Node.js backend server
 ├─ index.html         # Frontend
 ├─ style.css          # CSS for UI
 └─ script.js          # Frontend JavaScript
-Example
-Job description keywords: JavaScript HTML CSS React Node
+```
+---
 
-Resume includes: Proficient in HTML, CSS, and React.
+## Example
+- Job description keywords: `JavaScript HTML CSS React Node`
 
-Match score: 60%
+- Resume includes: `Proficient in HTML, CSS, and React.`
 
-Highlighted resume: HTML, CSS, and React highlighted.
+- Match score: 60%
+
+- Highlighted resume: `HTML`, `CSS`, and `React` highlighted.
